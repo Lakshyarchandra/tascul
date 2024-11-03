@@ -1,0 +1,239 @@
+.home {
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: url("../../../src/assets/bg.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.header-content {
+  text-align: left;
+  margin-right: 16rem;
+}
+
+.header-image {
+  width: 500px;
+  height: auto;
+}
+
+.home-header h1 {
+  font-size: 2.8rem;
+  color: #058c6a;
+  text-shadow: 2px 2px 12px rgba(4, 231, 243, 0.3);
+  margin-bottom: 1rem;
+}
+
+.home-header p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #e0e4f1;
+}
+
+.cta-button {
+  background-color: #058c6a;
+  color: #1f263d;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #024145;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.video-section {
+  margin: 2rem 0;
+  width: 80%;
+}
+
+.video-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f263d;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-thumbnail {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-thumbnail-img {
+  width: 250px;
+  border-radius: 8px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.video-description {
+  text-align: left;
+  margin-left: 1rem;
+  max-width: 400px;
+}
+
+.video-description h3 {
+  color: #058c6a;
+  font-size: 1.3rem;
+}
+
+.video-description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.feature-card {
+  background-color: #1f263d;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 280px;
+  flex: 1 1 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.feature-card h3 {
+  color: #058c6a;
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.feature-card p {
+  color: #b0b4c2;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.faq-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  color: #ffffff;
+  max-width: 800px;
+  width: 100%;
+  background-color: #1f263d;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.faq-section h2 {
+  text-align: center;
+  color: #058c6a;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.faq-card {
+  background-color: #252c40;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.faq-card:hover {
+  transform: translateY(-3px);
+  background-color: #30394f;
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  color: #058c6a;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d1d5db;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  margin-top: 0.5rem;
+}
+
+.faq-answer.show {
+  max-height: 300px;
+}
+
+.faq-question::after {
+  content: "➕";
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-card.open .faq-question::after {
+  content: "➖";
+}
+
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-modal-content {
+  width: 80%;
+  max-width: 800px;
+}

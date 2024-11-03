@@ -1,0 +1,47 @@
+/* src/components/Footer.css */
+
+.footer {
+  background: linear-gradient(135deg, #0b0e1a, #1f263d, #292f45);
+  color: #ffffff;
+  padding: 2rem 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+  color: #b0b4c2;
+  line-height: 1.5;
+}
+
+.social-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: #058c6a;
+  font-size: 1.6rem;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #e5a600;
+  transform: scale(1.15);
+  box-shadow: 0 4px 8px rgba(255, 187, 45, 0.3);
+}
+
+.social-links a:active {
+  transform: scale(1.05);
+}
